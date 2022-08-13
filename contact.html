@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>丸塾　やる気と点数を引き上げる、個別指導。 | お問合せ</title>
+    <meta name="description" content="丸塾問合せフォーム">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+ <div class="header-wrapper">
+    <header id="header" class="header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.png" alt="丸塾ホーム"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">丸塾について</a></li>
+                <li><a href="index.html #moving">お知らせ</a></li>
+                <li><a href="course.html">コース</a></li>
+                <li><a href="index.html #moving-2">アクセス</a></li>
+                <li><a href="contact.html">お問合せ</a></li>
+            </ul>
+        </nav>
+    </header>
+ </div>
+
+<main>    
+    <h2 class="about-marujuku">お問合わせ</h2>
+        <p class="text text-3">
+         「興味がある」「相談がしたい」<br>
+         そんな方はいつでもお気軽にご連絡ください。<br>
+         無料相談・無料体験授業のお申込みもこちらから。
+        </p>
+    <table id="contact-form" class="contact-form">
+        <tr class="inner-table">
+            <th class="th-2">
+                
+                    連絡方法
+            
+            </th>
+            <td class="td-2">    
+                <input type="radio" name="howtocontact" value="メールで連絡を希望">メールで連絡を希望
+                <input class="mail-or-tell" type="radio" name="howtocontact" value="電話での連絡を希望" checked>電話での連絡を希望
+            </td>
+        </tr>
+
+        <tr class="inner-table">
+            <th class="th-2">お子様のお名前</th>
+
+        <td class="td-2 ">
+                <label class="namae">姓</label>
+                <input class="th-childname" maxlength="183px"  name="student_name_sei" type="text">
+                <label class="namae">名</label>
+                <input class="th-childname" maxlength="183px"  name="student_name_mei" type="text">
+        </td>
+    </tr>  
+    <tr class="inner-table">
+        <th class="th-2">
+            
+                <label>フリガナ</label>
+            
+        </th>
+        <td class="td-2">
+                <label>セイ</label>
+                <input class="th-childname" maxlength="183px" name="student_kana_sei" type="text">
+                <label>メイ</label>
+                <input class="th-childname" maxlength="183px" name="sutudent_kana_mei" type="text">
+        </td>
+    </tr>  
+    <tr class="inner-table">
+        <th class="th-2">
+            <div>学年</div>
+        </th>
+        <td class="td-2">
+            <div>
+                <label class="choice">
+                    <select name="grade" class="gakunen-choice">
+                        <option value="▼ご選択ください"> ▼ご選択ください</option>
+                        <option value="中学1年生">中学1年生</option>
+                        <option value="中学2年生">中学2年生</option>
+                        <option value="中学3年生">中学3年生</option>
+                        <option value="高校1年生">高校1年生</option>
+                        <option value="高校2年生">高校2年生</option>
+                        <option value="高校3年生">高校3年生</option>
+                        <option value="浪人生">浪人生</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </label>
+            </div>
+        </td>
+    </tr>
+    <tr class="inner-table">
+        <th class="th-2">
+                <label>メールアドレス</label>
+        </th>
+        <td class="td-2">
+                <input class="th-childname2"  maxlength="416px" name="mail" type="text">
+        </td>
+    </tr>  
+    <tr class="inner-table">
+        <th class="th-2">
+                <label>電話番号</label>
+        </th>
+        <td class="td-2 tel-number">
+            <input class="th-childname3"  maxlength="100x" name="tell" type="text">
+            <span>-</span>
+            <input  class="th-childname3" maxlength="100px" name="tell" type="text">
+            <span>-</span>
+            <input  class="th-childname3" maxlength="100px" name="tell" type="text">
+        </td>
+    </tr>  
+    <tr class="inner-table">
+        <th class="th-2">
+            <div>
+                ご相談
+            </div>
+        </th>
+        <td class="td-2">
+            <input type="radio" name="advice" value="希望する"checked>希望する
+            <input class="kibou-shinai" type="radio" name="advice" value="希望しない">希望しない
+        </td>
+    </tr>
+    <tr class="inner-table">
+        <th class="th-2">
+            <div>無料体験授業</div>
+        </th>
+        <td class="td-2">
+            <input type="radio" name="trial-lesson" value="希望する"checked>希望する
+            <input class="kibou-shinai" type="radio" name="trial-lesson" value="希望しない" >希望しない
+        </td>
+    </tr>
+    <tr class="inner-table">
+        <th class="th-2">
+                <p class="th-3">その他<br></p>
+                <p class="th-3">お問合せ内容</p>
+        </th>
+        <td class="td-2">
+            <textarea  class="th-childname4" name="note" ></textarea>
+        </td>
+    </tr>
+    </table>
+
+    <form action="" method="post">
+        <div class="submit_btn">
+            <input type="image" name="submit_btn" src="images/send-button.png"  alt="送信ボタン" value="送信">
+        </div>
+    </form>
+</main>
+
+<footer>
+    <ul class="menu-footer">
+        <li class="menu-footer1"><a href="about.html"><span class="circle">●</span>丸塾について</a><br>
+            <a href="index.html #moving"><span class="circle">●</span>お知らせ</a>
+        </li>
+    
+        <li class="menu-footer2"><a href="course.html"><span class="circle">●</span>コース</a><br>
+            <span class="course-footer"><a href="course.html #about-marujuku-taimen">対面コース</a></span><br>
+            <span class="course-footer"><a href="course.html #about-marujuku-online">オンラインコース</a></span>
+        </li>
+
+        <li><a href="index.html #moving-2"><span class="circle">●</span>アクセス</a></li>
+
+        <li><a href="contact.html">
+            <img src="images/contact-logo.png" alt="お問合せフォームのアイコン">
+        </a></li>
+    </ul>
+    <small class="copyright"> Copyright &copy; 丸塾 all right reserved.</small>
+</footer>
+</body>
+</html>
