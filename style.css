@@ -1,0 +1,650 @@
+@charset "utf=";
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    max-width: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2d2d2d;
+    transition: 0.6s;  
+}
+
+
+/*--------
+/*ヘッダー
+/*------------------*/
+#header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+}
+.header-wrapper {
+    position: fixed;
+    z-index: 10;
+    max-width: 980px;
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+	padding: 6px;
+	list-style-type: none;
+    color: black;
+
+}
+header li {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+header li a {
+    transition-timing-function: all 0.6s ease;
+}
+
+header .logo {
+    width: 110px;
+}
+
+nav a{
+    display: inline-block;
+    position: relative;
+    color: #555;
+    text-decoration: none;
+}
+
+nav a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #ffc107;
+    transform: scale(0, 1);
+    transition: 0.4s;
+}
+
+nav a:hover:before {
+    transform: scale(1);
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto ;
+    padding: 0 4%;
+}
+
+
+
+
+/*--------
+/*メインビジュアル
+/*------------------*/
+main {
+    padding-top: 65px;
+}
+
+#concept {
+    background-image: url(images/main-image.png);
+    right: 50px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom;
+    height: 433px;
+    position: relative;
+    font-family: "游ゴシック体", "Yu Gothic", sans-serif;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+}
+
+.small-word {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.large-word {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 23px;
+    background-image: url(images/main-line.png);
+    background-repeat: no-repeat;
+    background-position:  bottom 0 right 20px;
+
+}
+
+.section-title1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 178px 0 30px;
+    background-image: url(images/about-marujuku-moji.png);
+    background-position: center bottom;
+}
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    background-image: url(images/4moji.png);
+    background-position: center;
+    padding: 0 0px 50px 0;
+}
+
+.circle-image {
+    margin: 92px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-image2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.square-image {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 60px 100px;
+}
+
+.square-image2 {
+    padding: 0 24px;
+}
+
+.course1 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.course2 {
+    padding: 0 160px;
+}
+
+.course2 a:hover {
+    background: linear-gradient(transparent 60%, #ffc107 40%);
+}
+
+ .square-image img:hover {
+    opacity: 0.6; /* 40％ほど透過させる */
+ }
+
+.text  {
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+.naiyou {
+    margin: 0 0 178px 0;
+}
+
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 40px 0 180px 0;
+  }
+
+  dl dt {
+    width: 25%;
+    padding-left: 330px;
+
+  }
+
+  dl dd {
+    width: 75%;
+    padding: 0 10px 0 230px;
+  }
+
+.googlemap {
+    text-align: center;
+    padding: 65px 0 0 0;
+
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.map-image {
+    padding: 44px 0 0 0;
+}
+
+.directions {
+    padding: 44px 0 0 150px;
+}
+
+.parking {
+    padding: 25px 0 0px 0;
+}
+#moving {
+    padding-bottom: 100px;
+} 
+
+#moving-2 {
+    padding-bottom: 100px;
+}
+/*--------
+/*フッター
+/*------------------*/
+footer {
+    padding: 78px 0 0 0;
+}
+
+footer ul {
+    padding: 77px 0 0 0 ;
+    line-height: 36px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #dbdbdb;
+    height: 139px;
+    padding: 20px 0 0 0;
+}
+
+.circle {
+    color: #ffc107;
+}
+
+.menu-footer1 {
+    padding: 0 0 0 60px;
+}
+
+.course-footer {
+    padding: 0 0 0 20px;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*--------
+/*アバウト
+/*------------------*/
+.about-marujuku {
+    font-size: 32px;
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    text-align: center;
+    padding: 120px 0 30px 0px;
+    width: 100%;
+    background-image: url(images/about-marujuku-moji.png);
+    background-position: bottom;
+
+}
+#jukucho-comment {
+    margin: 118px 0 35px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.jukucho-image {
+    padding: 0 43px 0 0;
+}
+
+.mokuhyo {
+    padding-bottom: 35px;
+}
+
+.jukucho-comment {
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.jukucho-comment p {
+    display: inline-block;
+    text-align: left;
+    margin-left: 270px;
+}
+
+.height-40px {
+    padding-bottom: 40px;
+}
+
+.jukucho-sign {
+    text-align: right;
+    padding-right: 200px;
+}
+
+.yakushoku {
+    font-size: 19.05px;
+    font-family: "MS PMincho", "MS 明朝", serif;
+    padding: 30px 130px 15px 0;
+}
+
+
+/*--------
+/*コース
+/*------------------*/
+
+h3 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #039be5;
+    text-align: center;
+}
+
+.course-annai {
+    text-align: center;
+}
+
+.button-course {
+    display: flex;
+    justify-content: center;
+}
+
+.button-course2 {
+    margin: 85px 130px 0 100px;
+
+}
+.class-information {
+    display: flex;
+    padding: 85px 0 115px 0;
+}
+
+.course-taimen {
+    justify-content: center;
+    padding-left: 300px;
+}
+.course-taimen1 {
+    margin-left: 360px;
+}
+
+.taimen-setsumei {
+    padding-left: 15px;
+}
+
+.online-setsumei {
+    padding-left: 82px;
+}
+
+.price-information {
+    font-size: 32px;
+    color: #039be5;
+    text-align: center;
+    padding: 108px 0 30px 0;
+}
+
+.price-chart {
+    width: 845px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th {
+    color: #FFFFFF;
+    font-weight: normal;
+    background-color: #039be5;
+    line-height: 40px;
+    width: 25%;
+}
+
+td { 
+    border-bottom: 1px solid #039be5;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.tax {
+    padding: 18px 0  0 900px;
+    font-size: 14px;
+}
+
+.text-bottom {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.text-2 {
+    padding-bottom: 88px;
+}
+
+.icon-image {
+    padding: 27px 0 47px 0;
+}
+
+/*オレンジのボタン---------*/
+.course-button1 {
+    padding: 85px 0 100px 0;
+    margin-top: 80px;
+
+}
+.course-button2 {
+    background: #ffc107;
+    position: absolute;
+    width: 245px;
+    padding: 0.5rem;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    box-shadow: -5px 3px  #fcd14e;
+    transition: .1s;
+  }
+  
+  .course-button2:hover {
+    box-shadow: none;
+    margin-top: 10px;
+  }
+
+  .course-button3 {
+    background: #ffc107;
+    position: absolute;
+    width: 245px;
+    padding: 0.5rem;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    box-shadow: -5px 3px  #fcd14e;
+    transition: .1s;
+  }
+  
+  .course-button3:hover {
+    box-shadow: none;
+    margin-top: 10px;
+  }
+
+
+/*--------
+/*お問合せ
+/*------------------*/
+.contact-line {
+    padding: 10px 0 15px 0;
+}
+
+.contact-form {
+    width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.contact-form  {
+    font-size: 16px;
+}
+
+.inner-table {
+    background-image: url(images/contact-line.png);
+    background-repeat: no-repeat;
+}
+
+#contact-form .th-2 {
+    line-height: 68px;
+    background-color: transparent;
+    color: #2d2d2d;
+    text-align: left;
+    text-indent: 15px;
+}
+
+.td-2 { 
+    border-bottom: none;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.th-3 {
+    line-height: 22px;
+}
+
+.th-childname {
+background-color: #d6effb;
+border: 4px solid #d6e4ec;
+width: 180px;
+height: 43px;
+box-sizing: border-box;
+}
+
+.th-childname2 {
+    background-color: #d6effb;
+    border: 4px solid #d6e4ec;
+    width: 416px;
+    height: 43px;
+    box-sizing: border-box;
+    margin-left: 35px;
+}
+
+.th-childname3 {
+    background-color: #d6effb;
+    border: 4px solid #d6e4ec;
+    width: 100px;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.th-childname4 {
+    background-color: #d6effb;
+    border: 4px solid #d6e4ec;
+    width: 454px;
+    height: 207px;
+    box-sizing: border-box;
+}
+.gakunen-choice {
+    border: 4px solid #d6e4ec;
+    width: 230px;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.text-3 {
+    padding: 50px 0 90px 0;
+}
+
+.namae {
+    padding: 0 8px;
+}
+
+.choice {
+    padding-left: 36px;
+}
+
+.tel-number {
+    padding-left: 36px;
+}
+
+.mail-or-tell {
+    margin-left: 60px;
+}
+
+.kibou-shinai {
+    margin-left: 50px;
+}
+
+.submit_btn {
+    display: flex; 
+    justify-content: center;
+    padding: 70px 0 80px 0  ;
+}
+
+.submit_btn:hover {
+    opacity: 0.6;
+    transition: 0.6s;
+}
+
+
+
+
+
+/*--------
+/*モバイル版
+/*------------------*/
+/*
+@media (max-width: 600px) {
+   
+.html {
+    width: 80%;
+}    
+
+
+/*　ヘッダー　*/
+/*
+.header li ul {
+    font-size: 1rem;
+    margin-left: 2px;
+}    
+
+.header {
+    flex-direction: column;
+    align-items: center;
+}
+
+#concept {
+    margin: 100px 0 0 50px;
+    background-size: 80%;
+}
+
+    .small-word {
+        font-size: 15px;
+    }
+
+    .large-word {
+        font-size: 30px;
+        letter-spacing: 5px;
+        background-repeat: no-repeat;
+
+    }
+}
+*/
